@@ -5,7 +5,7 @@
     <title>QA Final Project</title>
 
     <!-- So I can't use Bootstrap, eh?  How about a CSS Reset utility -->
-    <link rel="stylesheet" type="text/css" href="css/reset-stylesheet.min.css" />
+    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/2.1.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/default.css"/ >
     <link rel="stylesheet" type="text/css" href="css/blackGrid.css" />
 
@@ -13,6 +13,7 @@
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 </head>
 <body>
+<div class="grid grid-pad">
 <div class="wrapper">
     <!-- Navigation, on top of page -->
     <div id="header">
@@ -24,13 +25,11 @@
     </div> <!-- header -->
 
     <!-- Body of Page -->
-    <div id="content" class="grid grid-pad"></div> <!-- content -->
-
-    <div class="push"></div>
+    <div id="content"></div> <!-- content -->
 </div> <!-- wrapper -->
 
     <!-- Footer -->
-    <div id="footer" class="grid grid-pad">
+    <div id="footer">
         <div class="col-1-2">
             <p>&copy; 2013 Daniel Penney</p>
         </div>
@@ -38,6 +37,7 @@
             <p>Track my current <a href="https://github.com/djpenney/final-proj/commits/master" target="_blank">website code</a>.</p>
         </div>
     </div> <!-- footer -->
+</div> <!-- grid -->
 
     <!-- Page Loading -->
     <script>
