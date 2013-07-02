@@ -8,7 +8,20 @@ html, body { height: 100%; }
     margin: 0 auto -4em;
 }
 
-.footer, .push { height: 4em; }
+#footer, .push { height: 4em; }
+
+/* Overall */
+#header {
+background-color: #DDD;
+}
+
+#content {
+background-color: #CCC;
+}
+
+#footer {
+background-color: #BBB;
+}
 
 /* Main */
 
