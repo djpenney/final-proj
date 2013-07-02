@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>QA Final Project</title>
+
+    <!-- So I can't use Bootstrap, eh?  How about a CSS Reset utility -->
+    <link rel="stylesheet" type="text/css" href="css/reset-stylesheet.min.css">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+
+    <!-- JS -->
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <!-- Navigation, on top of page -->
+    <div id="header">
+        <h1>Final Project</h1>
+        <nav>
+            <a href="main.html">Home</a>
+            <a href="description.html">Product Description</a>
+        </nav>
+    </div> <!-- header -->
+
+    <!-- Body of Page -->
+    <div id="content"></div> <!-- content -->
+
+    <div class="push"></div>
+</div> <!-- wrapper -->
+
+    <!-- Footer -->
+    <div id="footer">
+        <p>&copy; 2013 Daniel Penney</p>
+    </div> <!-- footer -->
+
+    <!-- Page Loading -->
+    <script>
+    $(document).ready( function() {
+        $('#content').load( 'main.html' );
+    });
+
+    $(function(){
+        $('nav a').click(function(event){
+            $('#content').load( $(this).attr('href') );
+            event.preventDefault();
+        });
+    });
+    </script>
+</body>
+</html>
