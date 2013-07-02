@@ -2,15 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <!-- Prevent any pages loaded by JS don't get cached -->
-    <meta HTTP-EQUIV="Pragma" CONTENT="no-cache">
-    <meta HTTP-EQUIV="Expires" CONTENT="-1">
     <title>QA Final Project</title>
 
     <!-- So I can't use Bootstrap, eh?  How about a CSS Reset utility -->
-    <link rel="stylesheet" type="text/css" href="css/reset-stylesheet.min.css">
-    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/960gs/0/960.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" type="text/css" href="css/reset-stylesheet.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/default.css"/ >
+    <link rel="stylesheet" type="text/css" href="css/blackGrid.css" />
 
     <!-- JS -->
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
@@ -27,7 +24,7 @@
     </div> <!-- header -->
 
     <!-- Body of Page -->
-    <div id="content" class="container_12"></div> <!-- content -->
+    <div id="content" class="grid grid-pad"></div> <!-- content -->
 
     <div class="push"></div>
 </div> <!-- wrapper -->
@@ -39,6 +36,11 @@
 
     <!-- Page Loading -->
     <script>
+    $.ajaxSetup ({
+        // Disable caching of AJAX responses
+        cache: false
+    });
+
     $(document).ready( function() {
         $('#content').load( 'main.html' );
     });
