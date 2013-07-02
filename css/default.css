@@ -1,6 +1,12 @@
+body {
+    margin: auto;
+    width: 960px;
+    background-image:url('../img/bg_texture.jpg');
+}
+
 /* Overall */
 #header {
-background-color: #DDD;
+background-color: rgba(18,64,171,0.5);
 }
 
 #content {
@@ -11,7 +17,11 @@ background-color: #CCC;
 background-color: #BBB;
 }
 
-/* Main */
+#pitch, #descrip {
+    margin: 10px;
+    padding: 5px;
+}
 
+/* Main */
 
 /* Description */
