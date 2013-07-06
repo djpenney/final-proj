@@ -4,12 +4,11 @@
     <meta charset="utf-8">
     <title>Automatic Toilet Paper Dispenser</title>
 
-    <!-- So my grid system messes up my JS, lets use purecss.io -->
-    <link rel="stylesheet" href="http://yui.yahooapis.com/combo?pure/0.2.0/base-min.css&pure/0.2.0/grids-min.css&pure/0.2.0/menus-min.css" />
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="css/default.css" />
 
-    <!-- JS -->
-    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <!-- http://blog.colin-gourlay.com/blog/2012/02/safely-using-ready-before-including-jquery/ -->
+    <script>(function(w,d,u){w.readyQ=[];w.bindReadyQ=[];function p(x,y){if(x=="ready"){w.bindReadyQ.push(y);}else{w.readyQ.push(x);}};var a={ready:p,bind:p};w.$=w.jQuery=function(f){if(f===d||f===u){return a}else{p(f)}}})(window,document)</script>
 </head>
 <body>
     <!-- Navigation, on top of page -->
@@ -29,6 +28,10 @@
             <p>&copy; 2013 Daniel Penney</p>
             <p>Track my current <a href="https://github.com/djpenney/final-proj/commits/master" target="_blank">website code</a>.</p>
     </div> <!-- footer -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
 
     <!-- Page Loading -->
     <script>
