@@ -45,7 +45,7 @@
     });
 
     $(function(){
-        $('ul li a').click(function(event){
+        $('nav a').click(function(event){
             $('#content').load( $(this).attr('href') );
             event.preventDefault();
         });
