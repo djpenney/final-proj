@@ -1,17 +1,21 @@
 body {
-    margin: auto;
-    width: 960px;
     background-image:url('../img/bg_texture.jpg');
 }
 
-/* Overall */
+#wrapper {
+    margin: auto;
+    width: 960px;
+}
+
 /* header */
 #header {
-background-color: rgba(18,64,171,0.5);
+    background-color: rgba(18,64,171,0.5);
+    padding: 10px 10px 10px 20px;
 }
 
 #header span {
-    padding: 10px 0 10px 20px;
+    padding-right: 10px;
+    font-size: large;
 }
 
 #header span, #header nav {
@@ -26,12 +30,17 @@ background-color: rgba(18,64,171,0.5);
 
 /* content */
 #content {
-background-color: #CCC;
+    background-color: #CCC;
+    height: auto;
 }
 
 /* footer */
 #footer {
-background-color: #BBB;
+    background-color: #BBB;
+    padding: 10px 0 10px 0;
+    width: inherit;
+    position: absolute;
+    bottom: 0;
 }
 
 #footer span {
