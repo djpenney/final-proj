@@ -5,10 +5,29 @@ body {
 }
 
 /* Overall */
+/* header */
 #header {
 background-color: rgba(18,64,171,0.5);
 }
 
+#header span {
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#header span, #header nav {
+    display: inline-block;
+}
+
+#header nav a {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+    color: #000;
+}
+
+/* content */
 #content {
 background-color: #CCC;
 }
