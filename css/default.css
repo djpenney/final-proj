@@ -11,9 +11,7 @@ background-color: rgba(18,64,171,0.5);
 }
 
 #header span {
-    padding-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 0 10px 20px;
 }
 
 #header span, #header nav {
@@ -21,8 +19,7 @@ background-color: rgba(18,64,171,0.5);
 }
 
 #header nav a {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 0 5px 0 5px;
     font-weight: bold;
     color: #000;
 }
@@ -32,15 +29,19 @@ background-color: rgba(18,64,171,0.5);
 background-color: #CCC;
 }
 
+/* footer */
 #footer {
 background-color: #BBB;
 }
 
-#pitch, #descrip {
-    margin: 10px;
-    padding: 5px;
+#footer span {
+    display: inline-block;
+    padding: 10px 20px 10px 20px;
 }
 
-/* Main */
+#pitch, #descrip {
+    margin: 10px;
+}
 
-/* Description */
+/* Misc. Rules */
+.f_right { float: right; }
