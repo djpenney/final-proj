@@ -39,8 +39,8 @@ body {
     background-color: #BBB;
     padding: 10px 0 10px 0;
     width: inherit;
-    position: absolute;
-    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #footer span {
@@ -53,4 +53,14 @@ body {
 }
 
 /* Misc. Rules */
-.f_right { float: right; }
+
+/* The Magic Table */
+#tble {
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+}
+
+.show_tbl {
+    display: none;
+}

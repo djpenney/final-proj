@@ -16,7 +16,7 @@
 <div id="wrapper">
     <!-- Navigation, on top of page -->
     <div id="header">
-        <span><abbr title="Automatic Toilet Paper Dispenser">ATPD</abbr></a></span>
+        <span><abbr title="Automatic Toilet Paper Dispenser">ATPD</abbr></span>
         <nav>
             <a href="main.html">Home</a>
             <a href="description.html">Product Description</a>
@@ -27,10 +27,20 @@
     <div id="content"></div> <!-- content -->
 
     <!-- Footer -->
-    <div id="footer">
-        <span>&copy; 2013 Daniel Penney</span>
-        <span class="f_right">Track my current <a href="https://github.com/djpenney/final-proj/commits/master" target="_blank">website code</a>.</span>
+    <div id="footer" class="navbar navbar-fixed-bottom">
+        <span><button id="chi" class="btn btn-mini">Show Table</button>&emsp;&copy; 2013 Daniel Penney</span>
+        <span class="pull-right">Track my current <a href="https://github.com/djpenney/final-proj/commits/master" target="_blank">website code</a>.</span>
     </div> <!-- footer -->
+</div>
+
+<div id="tble" class="show_tbl">
+<pre>
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Here is my TABLE!&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</pre>
 </div>
 
     <!-- Bootstrap JS -->
@@ -49,10 +59,14 @@
     });
 
     $(function(){
-        $('nav a').click(function(event){
+        $('nav a').click( function(event) {
             $('#content').load( $(this).attr('href') );
             event.preventDefault();
         });
+    });
+
+    $('#chi').click( function() {
+        $('#tble').toggleClass('show_tbl');
     });
     </script>
 </body>
