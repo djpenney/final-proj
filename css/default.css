@@ -1,11 +1,18 @@
+/* Let's bring in some fonts! */
+@import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+
 body {
     background-image:url('../img/bg_texture.jpg');
+    font-family: 'Ubuntu', sans-serif;
 }
 
 #wrapper {
     margin: auto;
     width: 960px;
 }
+
+h1, h2, h3, h4, h5, h6 { font-family: "Shadows Into Light"; }
 
 /* header */
 #header {
